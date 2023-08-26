@@ -13,7 +13,7 @@
     <div class="fondo">
 
         <img src="../../assets/img/LOGOrapid-riders.png" alt="rapid-riders.png">
-        <font size="2">RAPID RIDERS</font>
+        <h4>RAPID RIDERS</h4>
     </div>
     <div class="filtro">
         <div class="img">
@@ -21,16 +21,16 @@
         </div>
         <div class="filtro-login">
             <div class="login">
-                <font size="5">Inicia Sesión</font>
-                <font size="3" style="padding-bottom: 10px; font-weight: 100;">administrador</font>
+                <h1>Inicia Sesión</h1>
+                <h3>administrador</h3>
                 <form>
                     <label for="usuario">Correo Electrónico</label>
-                    <input type="text" name="usuario" placeholder="Ingresa tu correo">
+                    <input type="text" name="usuario" placeholder="Ingresa tu correo" id="txtUsuario">
                     <label for="Contraseña">Contraseña</label>
-                    <input type="password" name="password" placeholder="Ingresa tu contraseña">
+                    <input type="password" name="password" placeholder="Ingresa tu contraseña" id="txtPsw">
                 </form>
                 <br>
-                <button id="login" style="font-weight: bold;" onclick="alert('Ya inició sesión prrin')">
+                <button id="login" style="font-weight: bold;" onclick="login()">
                     Iniciar Sesión
                 </button>
                 <br>
@@ -39,5 +39,6 @@
         </div>
     </div>
 </body>
-
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="./assets/js/controlador.js"></script>
 </html>
