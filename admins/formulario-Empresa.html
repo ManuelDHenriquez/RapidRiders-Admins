@@ -5,16 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../assets/styles/main.css">
+    <link rel="stylesheet" href="../assets/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 
 <body>
-    <!-- As a heading -->
     <nav class="navbar m-3 bg-body-tertiary">
         <div class="container-fluid color-primary nav-motor">
-            <span class="navbar-brand mb-0 h1">Empresa</span>
+            <span class="navbar-brand mb-0 h1">Empresas</span>
         </div>
     </nav>
 
@@ -42,45 +41,51 @@
         <div class="row m-3">
             <div class="col-6">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-6 mb-3">
                         <label for="">Nombre del Producto</label>
-                        <br>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <input type="text" class="form-control" placeholder="Ingrese nombre del Producto">
+                    </div>
+                    <div class="col-6 mb-3">
                         <label for="">Precio</label>
-                        <br>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <input type="number" class="form-control"  placeholder="Ingrese Precio">
+                    </div>
+                    <div class="col-6 mb-3">
                         <label for="">Telefono</label>
-                        <br>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <input type="number"class="form-control" placeholder="Ingrese Telefono">
+                    </div>
+                    <div class="col-6 mb-3">
                         <label for="">correo Electronico</label>
                     </div>
-                    <div class="col-6">
-                        <input type="text" placeholder="Nombre del Empresa">
-                        <input type="number" placeholder="teléfono">
-                        <input type="number" placeholder="Dirección">
-                        <input type="email" placeholder="correo Electronico">
+                    <div class="col-6 mb-3">
+                        <input type="email" class="form-control" placeholder="Ingrese correo Electronico">
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 ">
                 <div class="row">
                     <div class="col-6">
                         <label for="">RTN</label><br>
-                        <label for="">Descripcion</label><br>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <input type="number"class="form-control" placeholder="Ingrese RTN">
                     </div>
                     <div class="col-6">
-                        <input type="text" placeholder="Impuesto"><br>
-                        <div class="form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                                style="height: 100px"></textarea>
-                            <label for="floatingTextarea2">Comments</label>
-                        </div>
-
+                        <label for="">Descripcion</label>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <textarea class="form-control" placeholder="Ingrese descripcion" id="floatingTextarea2"
+                            style="height: 100px"></textarea>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-
 
 
     <script src="https://kit.fontawesome.com/4c0694d6b6.js" crossorigin="anonymous"></script>
