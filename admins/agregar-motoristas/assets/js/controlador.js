@@ -11,17 +11,17 @@ const addMotorista = async () => {
     let date = $("#txtDate").val();
     let contrasena = $("#txtContrasena").val();
     let repetir = $("#txtRepetir").val();
-    let decripcion = $("#txtDescripcion").val();
+    let descripcion = $("#txtDescripcion").val();
     let placa = $("#txtPlaca").val();
 
-    if (nombre == "" || apellido == "" || identidad == "" || correo == "" || telefono == "" || date == "" || contrasena == "" || repetir == "" || decripcion == "" || placa == "") {
+    if (nombre == "" || apellido == "" || identidad == "" || correo == "" || telefono == "" || date == "" || contrasena == "" || repetir == "" || descripcion == "" || placa == "") {
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
             text: 'Todos los campos son obligatorios!',
         })
     } else {
-        if (contrasena == repetir) {
+        if (contrasena === contrasena) {
             let data = {
                 nombre: nombre,
                 apellido: apellido,
@@ -34,7 +34,7 @@ const addMotorista = async () => {
                 descripcionVehiculo: descripcion,
                 placaVehiculo: placa.toUpperCase()
             }
-            let response = await fecth ("http://localhost:3000/motoristas", {
+            let response = await fetch ("http://localhost:3000/motoristas", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -59,7 +59,7 @@ const addMotorista = async () => {
                 $("#txtRepetir").val("");
                 $("#txtDescripcion").val("");
                 $("#txtPlaca").val("");
-                listarMotoristas();
+                cargarMotoristas();
             } else {
                 Swal.fire({
                     icon: 'error',
