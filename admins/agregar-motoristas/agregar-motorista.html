@@ -4,20 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Motoristas</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="../../node_modules/sweetalert2/dist/sweetalert2.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
     <!-- As a heading -->
-    <nav class="navbar m-3 bg-body-tertiary">
-        <div class="container-fluid color-primary nav-motor">
-            <span class="navbar-brand mb-0 h1">Motorista</span>
+    <div class="container-fluid my-3 bg-light">
+        <div class="row text-center">
+            <div class="col-12 h3 my-3 text-center cabecera">
+                Motoristas
+            </div>
         </div>
-    </nav>
+    </div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-8">
@@ -37,26 +40,16 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col">#img</th>
+                            <th scope="col">#ID</th>
                             <th scope="col">Nombre</th>
-                            <th scope="col">Telefono</th>
-                            <th scope="col">Direccion</th>
+                            <th scope="col">Teléfono</th>
+                            <th scope="col">Correo</th>
                             <th scope="col">Número de placa</th>
                             <th scope="col">Acciones</th>
 
                         </tr>
                     </thead>
-                    <tbody class="table-group-divider">
-                        <tr id="tblMotoristas">
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>Mark</td>
-                            <td> <i class="fa-solid fa-square-check" style="color: #1f6b28;"></i>
-                                <i class="fa-solid fa-square-xmark" style="color: red"></i>
-                            </td>
-                        </tr>
+                    <tbody class="table-group-divider"  id="tblMotoristas">
                     </tbody>
                 </table>
             </div>
@@ -116,7 +109,7 @@
                             </div>
                             <div class=" mb-3 col-md-6">
                                 <label for="txtPlaca" class="form-label">placa del vehiculo</label>
-                                <input type="password" class="form-control" id="txtPlaca" placeholder="Ingrese placa del vehiculo">
+                                <input type="text" class="form-control" id="txtPlaca" placeholder="Ingrese placa del vehiculo">
                             </div>
                         </div>
                 
@@ -173,13 +166,13 @@
                             </div>
                             <div class=" mb-3 col-md-6">
                                 <label for="txtPlaca" class="form-label">placa del vehiculo</label>
-                                <input type="password" class="form-control" id="txtPlacaEdit" placeholder="Ingrese placa del vehiculo">
+                                <input type="text" class="form-control" id="txtPlacaEdit" placeholder="Ingrese placa del vehiculo">
                             </div>
                         </div>
                 
                     </div>
                 </div>
-                <div class="modal-footer">
+                <div class="modal-footer text-center">
                     <button type="button" class="btn btn-warning" id="btnEditar">Editar</button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal" id="btnCerrarEdit">Close</button>
                 </div>

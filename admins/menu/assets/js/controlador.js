@@ -14,7 +14,7 @@ const idUser = localStorage.getItem("id");
 console.log(`Id de usuario: ${idUser}`);
 
 const cargarUsuario = async (id) => {
-    let respuesta = await fetch(`http://localhost:3000/clientes/${id}`, {
+    let respuesta = await fetch(`http://localhost:3000/admins/${id}`, {
         method: 'GET',
         headers: {
             'Accept': 'application/json',
@@ -28,6 +28,6 @@ cargarUsuario(idUser);
 
 const cerrarSesion = () => {
     localStorage.clear();
-    window.location.href = "../login/login.html";
+    window.location.href = "../login-admin/login.html";
 }
 

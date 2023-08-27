@@ -1,0 +1,22 @@
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#empresas {
+    display: none;
+}
+
+td {
+    vertical-align: middle !important;
+}
+
+.fa-star {
+    color: #fdb700 !important;
+}
+
+#btnBackCategorys {
+    cursor: pointer;
+}

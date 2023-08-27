@@ -83,20 +83,20 @@ label {
 input:focus {
     outline: none;
 }
-#login {
+/* #login {
     background-color: #FDB700;
     color: #000;
     padding: 15px;
     border-style: none;
     border-radius: 5px;
-}
+} */
 
 
-#login:hover {
+/* #login:hover {
     background-color: #dd9e00;
     color: #3d3d3d;
     padding: 15px;
     border-style: none;
     border-radius: 5px;
     cursor: pointer;
-}
+} */

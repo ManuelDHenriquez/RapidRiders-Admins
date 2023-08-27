@@ -7,12 +7,12 @@
     <title>Menú</title>
     <link rel="shortcut icon" href="../assets/img/LOGOrapid-riders.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/styles/styles.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="../../node_modules/sweetalert2/dist/sweetalert2.min.css">
 </head>
 
 <body>
-    <input type="checkbox" id="menu"/>
+    <input type="checkbox" id="menu" />
     <label for="menu" class="menu">
         <span></span>
         <span></span>
@@ -21,19 +21,25 @@
 
     <nav class="nav">
         <ul class="padre">
-            <li><a href="#Categorias" onclick="cargar('../categorias/categorias.html')" class="hijo" id="asd"><i class="fa-solid fa-cash-register"></i> &nbsp;Categorías / Compras</a></li>
-            <li><a href="#Historial" onclick="cargar('../compras/historial.html')" class="hijo" id="ass"><i class="fa-solid fa-outdent"></i> &nbsp;Historial de Compras</a></li>
+            <li><a href="#Categorias" onclick="cargar('../categorias/categorias.html')" class="hijo" id="asd">
+                <i class="fa-solid fa-table-list"></i> &nbsp;Categorías</a></li>
+            <li><a href="#Historial" onclick="cargar('../agregar-motoristas/agregar-motorista.html')" class="hijo"
+                    id="ass"><i class="fa-solid fa-motorcycle"></i> &nbsp;Motoristas</a></li>
+            <li><a href="#Ordenes" onclick="cargar('../ordenes/ordenes.html')" class="hijo"
+                    id="ass33"><i class="fa-solid fa-bars-staggered"></i> &nbsp;Ordenes</a></li>
         </ul>
         <ul class="padre">
-            <li><a href="#CerrarSesion" onclick="cerrarSesion()" class="hijo" id="Sesion"><i class="fa-solid fa-right-from-bracket"></i> &nbsp;Cerrar Sesión</a></li>
+            <li><a href="#CerrarSesion" onclick="cerrarSesion()" class="hijo" id="Sesion">
+                <i class="fa-solid fa-right-from-bracket"></i> &nbsp;Cerrar Sesión</a></li>
         </ul>
     </nav>
 
     <main>
-        <iframe src="../agregar-motoristas/agregar-motorista.html" frameborder="0" id="informacion"></iframe>
+        <iframe src="../categorias/categorias.html" frameborder="0" id="informacion"></iframe>
     </main>
 </body>
 <script src="../../assets/js/jquery.min.js"></script>
 <script src="../../node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
 <script src="./assets/js/controlador.js"></script>
+
 </html>

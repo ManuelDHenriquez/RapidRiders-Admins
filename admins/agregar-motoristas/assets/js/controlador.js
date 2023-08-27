@@ -32,7 +32,7 @@ const addMotorista = async () => {
                 password: contrasena,
                 celular: telefono,
                 descripcionVehiculo: descripcion,
-                placaVehiculo: placa
+                placaVehiculo: placa.toUpperCase()
             }
             let response = await fecth ("http://localhost:3000/motoristas", {
                 method: "POST",
@@ -96,7 +96,7 @@ const cargarMotoristas = async () => {
                 <td>${motorista.celular}</td>
                 <td>${motorista.correo}</td>
                 <td>${motorista.placaVehiculo}</td>
-                <td>
+                <td class="text-center">
                     <button class="btn btn-success btn-sm" onclick="cargarMotorista('${motorista._id}')"><i class="fa-solid fa-pen-to-square"></i></button>
                     <button class="btn btn-danger btn-sm" onclick="eliminarMotorista('${motorista._id}')"><i class="fa-solid fa-trash"></i></button>
                 </td>
@@ -140,7 +140,7 @@ $("#btnEditar").click(function() {
         correo: correoEdit,
         celular: telefonoEdit,
         descripcionVehiculo: decripcionEdit,
-        placaVehiculo: placaEdit
+        placaVehiculo: placaEdit.toUpperCase()
     }
     editarMotorista(idMotoristaEdit,dataEdit);
 });
@@ -207,4 +207,18 @@ $("#btnCerrarEdit").click(function() {
     $("#txtDescripcionEdit").val("");
     $("#txtPlacaEdit").val("");
     $("#mdlEditMotorista").modal("hide");
+});
+
+$("#btnCerrarAdd").click(function() {
+    $("#txtNombre").val("");
+    $("#txtApellido").val("");
+    $("#txtId").val("");
+    $("#txtEmail").val("");
+    $("#txtTelefono").val("");
+    $("#txtDate").val("");
+    $("#txtContrasena").val("");
+    $("#txtRepetir").val("");
+    $("#txtDescripcion").val("");
+    $("#txtPlaca").val("");
+    $("#mdlAddMotorista").modal("hide");
 });
